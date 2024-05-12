@@ -10,6 +10,8 @@
 #  movie_id   :integer
 #
 class Character < ApplicationRecord
+  belongs_to(:movie)
+=begin
   def movie
     key = self.movie_id
 
@@ -19,4 +21,5 @@ class Character < ApplicationRecord
 
     return the_one
   end
+=end
 end
